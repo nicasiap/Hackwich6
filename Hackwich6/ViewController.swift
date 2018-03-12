@@ -17,9 +17,10 @@ class ViewController: UIViewController {
     var targetValue: Int = 0
     
     @IBOutlet weak var targetLabel: UILabel!
-    func updateTargetLabel
-    updateTargetlabel 
-    
+    func updateTargetLabel() {
+    targetLabel.text = String(targetValue)
+        startNewRound()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
